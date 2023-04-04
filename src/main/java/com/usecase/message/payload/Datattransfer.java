@@ -4,7 +4,7 @@ public class Datattransfer {
 	
 	private int id;
 	
-	private String student;
+	private String studentEmail;
 	
 	public int getId() {
 		return id;
@@ -14,20 +14,22 @@ public class Datattransfer {
 		this.id = id;
 	}
 
-	public String getStudent() {
-		return student;
+	
+
+	public String getStudentEmail() {
+		return studentEmail;
 	}
 
-	public void setStudent(String student) {
-		this.student = student;
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
 	}
 
-	public String getTeacher() {
-		return teacher;
+	public String getTeacherEmail() {
+		return teacherEmail;
 	}
 
-	public void setTeacher(String teacher) {
-		this.teacher = teacher;
+	public void setTeacherEmail(String teacherEmail) {
+		this.teacherEmail = teacherEmail;
 	}
 
 	public String getMessage() {
@@ -38,7 +40,7 @@ public class Datattransfer {
 		this.message = message;
 	}
 
-	private String teacher;
+	private String teacherEmail;
 	
 	private String message;
 

@@ -8,13 +8,30 @@ import jakarta.persistence.Id;
 @Entity
 public class Message {
 	
-	@Id
+	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	private String student;
+	@Id
+	private String studentEmail;
 	
-	private String teacher;
+	public String getStudentEmail() {
+		return studentEmail;
+	}
+
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
+	}
+
+	public String getTeacherEmail() {
+		return teacherEmail;
+	}
+
+	public void setTeacherEmail(String teacherEmail) {
+		this.teacherEmail = teacherEmail;
+	}
+
+	private String teacherEmail;
 	
 	private String message;
 	
@@ -26,21 +43,8 @@ public class Message {
 		this.id = id;
 	}
 
-	public String getStudent() {
-		return student;
-	}
-
-	public void setStudent(String student) {
-		this.student = student;
-	}
-
-	public String getTeacher() {
-		return teacher;
-	}
-
-	public void setTeacher(String teacher) {
-		this.teacher = teacher;
-	}
+	
+	
 
 	public String getMessage() {
 		return message;

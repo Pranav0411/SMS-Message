@@ -45,8 +45,8 @@ public class MServiceImpl implements Services {
 	{
 		Message m = new Message();
 		m.setId(dt.getId());
-		m.setStudent(dt.getStudent());
-		m.setTeacher(dt.getTeacher());
+		m.setStudentEmail(dt.getStudentEmail());
+		m.setTeacherEmail(dt.getTeacherEmail());
 		m.setMessage(dt.getMessage());
 		return m;
 	}
@@ -55,8 +55,8 @@ public class MServiceImpl implements Services {
 	{
 		Datattransfer dt = new Datattransfer();
 		dt.setId(m.getId());
-		dt.setStudent(m.getStudent());
-		dt.setTeacher(m.getTeacher());
+		dt.setStudentEmail(m.getStudentEmail());
+		dt.setTeacherEmail(m.getTeacherEmail());
 		dt.setMessage(m.getMessage());
 		return dt;
 	}
